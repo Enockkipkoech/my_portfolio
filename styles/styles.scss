@@ -5,9 +5,9 @@
   list-style: none;
 }
 
- :root {
-  --color-primary: #191d2b;
-  --color-secondary: #27AE60;
+ :root{
+  --color-primary:  #191d2b ;
+  --color-secondary:  #27AE60;
   --color-white: #FFFFFF;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -17,20 +17,33 @@
   --color-grey-4: #454e56;
   --color-grey-5: #2a2e35;
   --color-grey-6: #12181b;
-  --color-red:red;
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
   --box-shadow-2: 0 3px 15px rgba(0,0,0,.2);
+ }
 
-
+ .light-mode{
+    --color-primary: #FFFFFF;
+    --color-secondary:#27AE60 ;
+    --color-white: #454e56;
+    --color-black: #000;
+    --color-grey0: #f8f8f8;
+    --color-grey-1: #6c7983;
+    --color-grey-2: #7c8a94;
+    --color-grey-3: #808e99;
+    --color-grey-4: #454e56;
+    --color-grey-5: #b2becd;
+    --color-grey-6: #12181b;
+    --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+    --box-shadow-2: 0 3px 15px rgba(0,0,0,.2);
  }
 
  body {
-  background-color:var(--color-primary);
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.1rem;
-  color: var(--color-white);
-  transition: all .4s ease-in-out;
+    background-color: var(--color-primary);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    color: var(--color-white);
+    transition: all .4s ease-in-out;
  }
  a {
   display: inline-block;
@@ -54,38 +67,15 @@
   top:0;
   padding: 3rem 18rem;
   transform: translateY(-100%)scale(0);
-  background-color: var(--color-grey-6);
+  background-color: var(--color-primary);
+}
+.container {
+  display: none;
+  transform: translateY(-100%) scale(0);
+  transition: all .4s ease-in-out;
+  background-color: var(--color-primary);
 }
 
-// .section{
-//   transform: translateY(-100%)scale(0);
-//   transition: all .4s ease-in-out;
-// }
-
-// .sec2{
-//   display: none;
-//   transform: translateY(0) scale(1);
-//   background-color: var(--color-grey-6);
-
-// }
-
-// .sec3{
-//   display: none;
-//   transform: translateY(0) scale(1);
-//   background-color: var(--color-grey-6);
-// }
-
-// .sec4{
-//   display: none;
-//   transform: translateY(0) scale(1);
-
-// }
-
-// .sec5{
-//   display: none;
-//   transform: translateY(0) scale(1);
-
-// }
 
 .active{
   display: block;
@@ -515,9 +505,12 @@
 /* Blogs Section*/
 .blogs {
   display:grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
-  margin-top: 3rem;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 3rem;
+  margin-top: 1rem;
+  width: 130%;
+  height: 100;
+
   .blog{
     position: relative;
     background-color: var(--color-grey-5);
@@ -659,7 +652,7 @@
         padding: .8rem 1.1rem;
         outline:none;
         border:none;
-        background-color: var(--color-grey-3);
+        background-color: var(--color-grey-5);
         width: 100%;
         color:var(--color-white);
         resize:none;
