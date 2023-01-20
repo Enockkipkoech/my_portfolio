@@ -557,7 +557,7 @@ section {
 }
 .blogs .blog .blog-text span {
   color: var(--color-secondary);
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
